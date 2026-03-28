@@ -89,7 +89,7 @@ const FAQ = () => {
             variants={SlideUp(0.2)}
             initial="initial"
             whileInView={"animate"}
-            className="mb-4 text-4xl text-(--gold) font-bold md:text-5xl"
+            className="mb-4 text-4xl text-(--primary) font-bold md:text-5xl"
           >
             Dúvidas sobre estética automotiva
           </motion.h2>
@@ -121,7 +121,7 @@ const FAQ = () => {
                   >
                     <AccordionTrigger className="group cursor-pointer text-white text-left hover:no-underline [&>svg]:hidden">
                       <div className="flex w-full items-center justify-between gap-6">
-                        <span className="pr-2 text-base text-white hover:text-(--gold)">
+                        <span className="pr-2 text-base text-white hover:text-(--primary)">
                           {faq.question}
                         </span>
 

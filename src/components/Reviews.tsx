@@ -11,15 +11,6 @@ import Img03 from "@/assets/homem03.jpg";
 import Img04 from "@/assets/mulher01.jpg";
 import Img05 from "@/assets/mulher02.jpg";
 import Img06 from "@/assets/mulher03.jpg";
-import Treinamento from "@/assets/Treinamento.png";
-
-const whatsappNumber = "5545999168759";
-const whatsappMessage =
-  "Olá, tenho interesse no Treinamento PPF Luxury. Gostaria de receber mais informações.";
-
-const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
-  whatsappMessage,
-)}`;
 
 type StaticReview = {
   author_name: string;
@@ -83,7 +74,7 @@ function Stars({ rating, size = 18 }: { rating: number; size?: number }) {
   const filled = Math.min(5, fullStars + extraFull);
   const empty = 5 - filled - (hasHalf ? 1 : 0);
 
-  const starClass = `text-[var(--gold)]`;
+  const starClass = `text-[var(--primary)]`;
   const emptyClass = `text-neutral-300`;
 
   return (
@@ -92,7 +83,7 @@ function Stars({ rating, size = 18 }: { rating: number; size?: number }) {
         <Star
           key={`full-${i}`}
           style={{ width: size, height: size }}
-          className={`fill-(--gold) ${starClass}`}
+          className={`fill-(--primary) ${starClass}`}
         />
       ))}
 
@@ -105,7 +96,7 @@ function Stars({ rating, size = 18 }: { rating: number; size?: number }) {
           <span className="absolute inset-0 overflow-hidden w-1/2">
             <Star
               style={{ width: size, height: size }}
-              className={`fill-(--gold) ${starClass}`}
+              className={`fill-(--primary) ${starClass}`}
             />
           </span>
         </span>
@@ -128,7 +119,7 @@ function clampText(text: string, maxChars = 180) {
   return { short: t.slice(0, maxChars).trimEnd() + "...", needsMore: true };
 }
 
-const ReviewsStaticPetshop = () => {
+const Reviews = () => {
   const ratingAvg = useMemo(() => {
     const sum = STATIC_REVIEWS.reduce((acc, r) => acc + (r.rating ?? 0), 0);
     return STATIC_REVIEWS.length ? sum / STATIC_REVIEWS.length : 0;
@@ -144,7 +135,7 @@ const ReviewsStaticPetshop = () => {
             variants={SlideUp(0.2)}
             initial="initial"
             whileInView={"animate"}
-            className="text-4xl md:text-5xl font-bold mb-3 text-(--gold)"
+            className="text-4xl md:text-5xl font-bold mb-3 text-(--primary)"
           >
             Excelência reconhecida por nossos clientes
           </motion.h2>
@@ -241,26 +232,9 @@ const ReviewsStaticPetshop = () => {
             );
           })}
         </Swiper>
-
-        <motion.a
-          variants={SlideUp(0.3)}
-          initial="initial"
-          whileInView="animate"
-          href={whatsappLink}
-          target="_blank"
-          rel="noreferrer"
-          className="group mt-14 flex w-full items-center justify-center overflow-hidden rounded-[28px] border-2 border-(--gold)/40"
-        >
-          <img
-            src={Treinamento}
-            alt="Banner Treinamento PPF"
-            className="max-h-[350px] w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
-            loading="lazy"
-          />
-        </motion.a>
       </div>
     </section>
   );
 };
 
-export default ReviewsStaticPetshop;
+export default Reviews;

@@ -115,7 +115,7 @@ const Contact = () => {
             variants={SlideUp(0.2)}
             initial="initial"
             whileInView={"animate"}
-            className="text-4xl text-(--gold) md:text-5xl font-bold mb-4"
+            className="text-4xl text-(--primary) md:text-5xl font-bold mb-4"
           >
             Agende seu atendimento
           </motion.h2>
@@ -164,7 +164,7 @@ const Contact = () => {
                         <Input
                           {...field}
                           placeholder="Seu nome completo"
-                          className="text-amber-300 placeholder:text-white/40 placeholder:italic bg-black border border-(--border-dark) focus:border-(--gold) focus:outline-none h-10 px-3 py-2 shadow-none rounded-md w-full"
+                          className="placeholder:text-white/40 placeholder:italic bg-black border border-(--border-dark) focus:border-2 focus:border-(--primary) focus:outline-none h-10 px-3 py-2 shadow-none rounded-md w-full"
                         />
                       </FormControl>
                       <FormMessage className="text-(--ring)" />
@@ -185,7 +185,7 @@ const Contact = () => {
                           {...field}
                           type="email"
                           placeholder="seu@email.com"
-                          className="text-amber-300 placeholder:text-white/40 placeholder:italic bg-black border border-(--border-dark) focus:border-(--gold) focus:outline-none h-10 px-3 py-2 shadow-none rounded-md w-full"
+                          className="placeholder:text-white/40 placeholder:italic bg-black border border-(--border-dark) focus:border-2 focus:border-(--primary) focus:outline-none h-10 px-3 py-2 shadow-none rounded-md w-full"
                         />
                       </FormControl>
                       <FormMessage className="text-(--ring)" />
@@ -206,7 +206,7 @@ const Contact = () => {
                           {...field}
                           mask="(00) 00000-0000"
                           placeholder="(99) 99999-9999"
-                          className="text-amber-300 placeholder:text-white/40 placeholder:italic bg-black border border-(--border-dark) focus:border-2 focus:border-(--gold) focus:outline-none h-10 px-3 py-2 shadow-none rounded-md w-full"
+                          className="text-white placeholder:text-white/40 placeholder:italic bg-black border border-(--border-dark) focus:border-2 focus:border-(--primary) focus:outline-none h-10 px-3 py-2 shadow-none rounded-md w-full"
                         />
                       </FormControl>
                       <FormMessage className="text-(--ring)" />
@@ -233,38 +233,38 @@ const Contact = () => {
                               onValueChange={controllerField.onChange}
                             >
                               <FormControl>
-                                <SelectTrigger className="text-amber-300 bg-black border border-(--border-dark) focus:border-(--gold) focus:outline-none h-10 px-3 py-2 shadow-none rounded-md w-full data-[placeholder]:italic data-[placeholder]:text-white/40">
+                                <SelectTrigger className="text-white bg-black border border-(--border-dark) focus:border-2 focus:border-(--primary) focus:outline-none h-10 px-3 py-2 shadow-none rounded-md w-full data-[placeholder]:italic data-[placeholder]:text-white/40">
                                   <SelectValue placeholder="Selecione o serviço" />
                                 </SelectTrigger>
                               </FormControl>
-                              <SelectContent className="bg-[#191919] border-(--card)">
+                              <SelectContent className="bg-(--secondary) border-(--card)">
                                 <SelectItem
                                   value="higienizacao"
-                                  className="hover:bg-(background) text-(--gold) focus:bg-(--background)"
+                                  className="hover:bg-(background) text-(--primary) focus:bg-(--background)"
                                 >
                                   Higienização interna
                                 </SelectItem>
                                 <SelectItem
                                   value="polimento"
-                                  className="hover:bg-(background) text-(--gold) focus:bg-(--background)"
+                                  className="hover:bg-(background) text-(--primary) focus:bg-(--background)"
                                 >
                                   Polimento técnico
                                 </SelectItem>
                                 <SelectItem
                                   value="ppf"
-                                  className="hover:bg-(background) text-(--gold) focus:bg-(--background)"
+                                  className="hover:bg-(background) text-(--primary) focus:bg-(--background)"
                                 >
                                   PPF
                                 </SelectItem>
                                 <SelectItem
                                   value="vitrificacao"
-                                  className="hover:bg-(background) text-(--gold) focus:bg-(--background)"
+                                  className="hover:bg-(background) text-(--primary) focus:bg-(--background)"
                                 >
                                   Vitrificação de pintura
                                 </SelectItem>
                                 <SelectItem
                                   value="outro"
-                                  className="hover:bg-(background) text-(--gold) focus:bg-(--background)"
+                                  className="hover:bg-(background) text-(--primary) focus:bg-(--background)"
                                 >
                                   Outro
                                 </SelectItem>
@@ -290,7 +290,7 @@ const Contact = () => {
                         <Textarea
                           {...field}
                           placeholder="Descreva o serviço desejado..."
-                          className="min-h-[120px] text-amber-300 placeholder:text-white/40 placeholder:italic bg-black border border-(--border-dark) focus:border-(--gold) focus:outline-none h-10 px-3 py-2 shadow-none rounded-md w-full"
+                          className="min-h-[120px] text-white placeholder:text-white/40 placeholder:italic bg-black border border-(--border-dark) focus:border-2 focus:border-(--primary) focus:outline-none h-10 px-3 py-2 shadow-none rounded-md w-full"
                         />
                       </FormControl>
                       <FormMessage className="text-(--ring)" />
@@ -300,7 +300,7 @@ const Contact = () => {
 
                 <Button
                   type="submit"
-                  className="w-full group relative overflow-hidden px-6 py-6 bg-(--gold) border border-(--border-dark) text-black text-lg font-bold rounded-lg cursor-pointer"
+                  className="w-full group relative overflow-hidden px-6 py-6 bg-(--primary) border border-(--border-dark) text-black text-lg font-bold rounded-lg cursor-pointer"
                 >
                   <span className="block transition-all duration-300 group-hover:-translate-y-full group-hover:opacity-0">
                     Enviar solicitação
@@ -323,7 +323,7 @@ const Contact = () => {
               <div className="rounded-2xl p-6 bg-(--card) border border-white/10 flex flex-col gap-8">
                 <div className="flex flex-col md:flex-row">
                   <div className="min-w-12 min-h-12 w-12 h-12 bg-(--sub-card) rounded-full flex items-center justify-center mr-4 mb-1">
-                    <FaWhatsapp className="w-6 h-6 text-(--gold)" />
+                    <FaWhatsapp className="w-6 h-6 text-(--primary)" />
                   </div>
 
                   <div className="flex flex-col">
@@ -338,14 +338,14 @@ const Contact = () => {
                       className="text-white/60 text-base font-medium hover:underline"
                       aria-label="Abrir conversa no WhatsApp"
                     >
-                      (45) 99916-8759
+                      (45) 99805-4299
                     </a>
                   </div>
                 </div>
 
                 <div className="flex flex-col md:flex-row">
                   <div className="min-w-12 min-h-12 w-12 h-12 bg-(--sub-card) rounded-full flex items-center justify-center mr-4 mb-1">
-                    <Mail className="w-6 h-6 text-(--gold)" />
+                    <Mail className="w-6 h-6 text-(--primary)" />
                   </div>
                   <div className="flex flex-col">
                     <span className="text-white text-lg font-semibold">
@@ -353,16 +353,16 @@ const Contact = () => {
                     </span>
                     <a
                       className="text-white/70 sm:text-base md:text-sm lg:text-base"
-                      href="mailto:luxurycar@gmail.com"
+                      href="mailto:detailer@gmail.com"
                     >
-                      luxurycar@gmail.com
+                      detailer@gmail.com
                     </a>
                   </div>
                 </div>
 
                 <div className="flex flex-col md:flex-row">
                   <div className="min-w-12 min-h-12 w-12 h-12 bg-(--sub-card) rounded-full flex items-center justify-center mr-4 mb-1">
-                    <MapPin className="w-6 h-6 text-(--gold)" />
+                    <MapPin className="w-6 h-6 text-(--primary)" />
                   </div>
                   <div className="flex flex-col">
                     <span className="text-white text-lg font-semibold">
@@ -379,7 +379,7 @@ const Contact = () => {
               {/* Map */}
               <div className="rounded-2xl p-4 overflow-hidden bg-(--card) border border-white/10">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14400.403868883946!2d-54.60115781337539!3d-25.535013481787537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f6911fb77e4adf%3A0x20288ad48b18ce4f!2zQW5kcsOpIFBlbMOtY3VsYXM!5e0!3m2!1spt-BR!2sbr!4v1774284994748!5m2!1spt-BR!2sbr"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3601.330047496725!2d-54.55200329999999!3d-25.494037000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f6914065d647b1%3A0xfdd5740410ffacef!2sDetailer%20Est%C3%A9tica%20Automotiva!5e0!3m2!1spt-BR!2sbr!4v1774673238222!5m2!1spt-BR!2sbr"
                   width="100%"
                   height="350"
                   style={{ borderRadius: 4 }}

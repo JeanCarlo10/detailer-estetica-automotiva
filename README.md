@@ -1,4 +1,4 @@
-# Bem-vindo ao projeto Luxury Car Experience
+# Bem-vindo ao projeto Detailer Estética Automotiva
 
 ## Informações do projeto
 

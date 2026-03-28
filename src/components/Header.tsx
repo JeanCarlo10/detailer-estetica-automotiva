@@ -161,8 +161,8 @@ const Header = () => {
                     href={`#${item.id}`}
                     className={`group relative text-lg font-medium tracking-[0.18em] transition-colors duration-300 ${
                       isActive
-                        ? "text-(--gold)"
-                        : "text-(--secondary-foreground) hover:text-(--gold)"
+                        ? "text-(--primary)"
+                        : "text-(--secondary-foreground) hover:text-(--primary)"
                     }`}
                     onClick={(e) => {
                       e.preventDefault();
@@ -171,7 +171,7 @@ const Header = () => {
                   >
                     {item.label}
                     <span
-                      className={`absolute -bottom-2 left-1/2 h-px -translate-x-1/2 bg-(--gold) transition-all duration-500 ease-out ${
+                      className={`absolute -bottom-2 left-1/2 h-px -translate-x-1/2 bg-(--primary) transition-all duration-500 ease-out ${
                         isActive ? "w-full" : "w-0 group-hover:w-full"
                       }`}
                     />
@@ -265,13 +265,13 @@ const Header = () => {
                           }}
                           className={`relative w-fit text-left text-3xl transition-colors duration-300 ${
                             isActive
-                              ? "text-(--gold)"
-                              : "text-white hover:text-(--gold)"
+                              ? "text-(--primary)"
+                              : "text-white hover:text-(--primary)"
                           }`}
                         >
                           {item.label}
                           <span
-                            className={`absolute -bottom-2 left-0 h-px bg-(--gold) transition-all duration-500 ${
+                            className={`absolute -bottom-2 left-0 h-px bg-(--primary) transition-all duration-500 ${
                               isActive ? "w-full" : "w-0"
                             }`}
                           />
@@ -282,7 +282,7 @@ const Header = () => {
 
                   <Button
                     onClick={() => scrollToSection("contact")}
-                    className="group relative mt-10 w-full cursor-pointer overflow-hidden rounded-none border border-(--border-dark) bg-(--gold) px-6 py-6 text-lg font-bold text-black [clip-path:polygon(12px_0,100%_0,calc(100%-12px)_100%,0_100%)]"
+                    className="group relative mt-10 w-full cursor-pointer overflow-hidden rounded-none border border-(--border-dark) bg-(--primary) px-6 py-6 text-lg font-bold text-black [clip-path:polygon(12px_0,100%_0,calc(100%-12px)_100%,0_100%)]"
                   >
                     <span className="block transition-all duration-300 group-hover:-translate-y-full group-hover:opacity-0">
                       Agendar

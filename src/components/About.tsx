@@ -12,11 +12,11 @@ const About = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="w-full lg:w-1/2"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-(--gold)">
-              Sobre a Luxury Car
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-(--primary)">
+              Sobre a Detailer
             </h2>
             <p className="text-lg text-white/90 mb-6">
-              Na Luxury Car, cada veículo recebe um cuidado minucioso, pensado
+              Na Detailer Estética Automotiva, cada veículo recebe um cuidado minucioso, pensado
               para valorizar sua presença, preservar sua originalidade e elevar
               seu padrão estético.
             </p>

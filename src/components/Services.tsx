@@ -7,7 +7,7 @@ import HigienizacaoBg from "@/assets/Service04.png";
 import PPFBg from "@/assets/Service02.jpg";
 import VitrificacaoBg from "@/assets/Service03.jpg";
 
-const whatsappNumber = "5545999168759";
+const whatsappNumber = "5545998054299";
 
 const services = [
   {
@@ -61,7 +61,7 @@ const Services = () => {
             variants={SlideUp(0.2)}
             initial="initial"
             whileInView="animate"
-            className="mb-4 text-4xl font-bold text-(--gold) md:text-5xl"
+            className="mb-4 text-4xl font-bold text-(--primary) md:text-5xl"
           >
             Nossos Serviços
           </motion.h2>
@@ -118,7 +118,7 @@ const Services = () => {
                         {service.title}
                       </h3>
 
-                      <div className="mt-5 h-0.5 w-full origin-left rounded-4xl bg-gradient-to-r from-(--gold) via-(--gold)/60 to-transparent transition-transform duration-700 md:w-full md:scale-x-0 md:group-hover/card:scale-x-100" />
+                      <div className="mt-5 h-0.5 w-full origin-left rounded-4xl bg-gradient-to-r from-(--primary) via-(--primary)/60 to-transparent transition-transform duration-700 md:w-full md:scale-x-0 md:group-hover/card:scale-x-100" />
 
                       <p className="mt-4 max-w-[95%] text-base leading-relaxed text-white/80 md:opacity-0 md:transition-all md:duration-500 md:delay-100 md:group-hover/card:opacity-100">
                         {service.description}
