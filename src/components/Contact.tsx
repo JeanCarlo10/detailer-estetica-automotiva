@@ -52,7 +52,7 @@ const quoteFormSchema = z.object({
 
 type QuoteFormData = z.infer<typeof quoteFormSchema>;
 
-const WHATSAPP_NUMBER = "554599168759";
+const WHATSAPP_NUMBER = "5545998054299";
 const WHATSAPP_TEXT = "Olá! Gostaria de agendar um atendimento.";
 const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
   WHATSAPP_TEXT,
@@ -369,7 +369,7 @@ const Contact = () => {
                       Endereço
                     </span>
                     <span className="text-white/70 text-base flex-wrap">
-                      Rua Marechal Floriano Peixoto, 2182 - Centro - Foz do
+                      Av. Silvio Américo Sasdelli, 3176 - Lancaster, Foz do
                       Iguaçu - PR
                     </span>
                   </div>

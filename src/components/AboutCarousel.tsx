@@ -1,15 +1,15 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
-import Studio01 from "@/assets/About01.png";
+import Studio01 from "@/assets/About01.jpg";
 import Studio02 from "@/assets/About02.jpg";
 import Studio03 from "@/assets/About03.jpg";
-import Studio04 from "@/assets/About04.jpg";
-import Studio05 from "@/assets/About05.jpg";
-import Studio06 from "@/assets/About06.jpg";
+import Studio04 from "@/assets/About04.webp";
+import Studio05 from "@/assets/About05.webp";
+import Studio06 from "@/assets/About06.webp";
 
 const images = [
-  { backgroundImage: Studio02 },
   { backgroundImage: Studio01 },
+  { backgroundImage: Studio02 },
   { backgroundImage: Studio03 },
   { backgroundImage: Studio04 },
   { backgroundImage: Studio05 },
