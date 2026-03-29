@@ -142,7 +142,7 @@ const Header = () => {
               height={70}
               loading="eager"
               decoding="async"
-              className="h-auto w-[clamp(44px,8vw,100px)]"
+              className="h-auto w-[clamp(95px,8vw,110px)]"
             />
           </a>
 
