@@ -164,7 +164,7 @@ const Contact = () => {
                         <Input
                           {...field}
                           placeholder="Seu nome completo"
-                          className="placeholder:text-white/40 placeholder:italic bg-black border border-(--border-dark) focus:border-2 focus:border-(--primary) focus:outline-none h-10 px-3 py-2 shadow-none rounded-md w-full"
+                          className="text-white placeholder:text-white/40 placeholder:italic bg-black border border-(--border-dark) focus:border-2 focus:border-(--primary) focus:outline-none h-10 px-3 py-2 shadow-none rounded-md w-full"
                         />
                       </FormControl>
                       <FormMessage className="text-(--ring)" />
@@ -185,7 +185,7 @@ const Contact = () => {
                           {...field}
                           type="email"
                           placeholder="seu@email.com"
-                          className="placeholder:text-white/40 placeholder:italic bg-black border border-(--border-dark) focus:border-2 focus:border-(--primary) focus:outline-none h-10 px-3 py-2 shadow-none rounded-md w-full"
+                          className="text-white placeholder:text-white/40 placeholder:italic bg-black border border-(--border-dark) focus:border-2 focus:border-(--primary) focus:outline-none h-10 px-3 py-2 shadow-none rounded-md w-full"
                         />
                       </FormControl>
                       <FormMessage className="text-(--ring)" />
