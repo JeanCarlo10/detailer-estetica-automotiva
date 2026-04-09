@@ -9,6 +9,7 @@ const FAQ = React.lazy(() => import("@/components/FAQ"));
 const Contact = React.lazy(() => import("@/components/Contact"));
 const Footer = React.lazy(() => import("@/components/Footer"));
 const WhatsAppButton = React.lazy(() => import("@/components/WhatsAppButton"));
+const BeforeAfterSlider = React.lazy(() => import("@/components/Comparison"));
 
 function LazyOnView({
   children,
@@ -103,6 +104,12 @@ const Index = () => {
         <LazyOnView>
           <Suspense fallback={null}>
             <FAQ />
+          </Suspense>
+        </LazyOnView>
+
+        <LazyOnView>
+          <Suspense fallback={null}>
+            <BeforeAfterSlider />
           </Suspense>
         </LazyOnView>
 

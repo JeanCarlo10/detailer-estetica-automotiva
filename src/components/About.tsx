@@ -16,9 +16,9 @@ const About = () => {
               Sobre a Detailer
             </h2>
             <p className="text-lg text-white/90 mb-6">
-              Na Detailer Estética Automotiva, cada veículo recebe um cuidado minucioso, pensado
-              para valorizar sua presença, preservar sua originalidade e elevar
-              seu padrão estético.
+              Na Detailer Estética Automotiva, cada veículo recebe um cuidado
+              minucioso, pensado para valorizar sua presença, preservar sua
+              originalidade e elevar seu padrão estético.
             </p>
             <p className="text-lg text-white/90 mb-8">
               Unimos técnica, produtos de alta performance e atenção absoluta

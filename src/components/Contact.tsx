@@ -110,7 +110,7 @@ const Contact = () => {
   return (
     <section id="contact" className="pt-10 pb-20 bg-(--background)">
       <div className="container mx-auto px-6 md:px-8">
-        <div className="text-center mb-16 animate-fade-in">
+        <div className="text-center mb-16">
           <motion.h2
             variants={SlideUp(0.2)}
             initial="initial"
