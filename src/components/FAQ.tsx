@@ -51,7 +51,6 @@ const faqs = [
   },
 ];
 
-// Animação do accordion
 const container: Variants = {
   hidden: {
     opacity: 1,
@@ -88,8 +87,8 @@ const FAQ = () => {
           <motion.h2
             variants={SlideUp(0.2)}
             initial="initial"
-            whileInView={"animate"}
-            className="mb-4 text-4xl text-(--primary) font-bold md:text-5xl"
+            whileInView="animate"
+            className="mb-4 text-4xl font-bold text-(--primary) md:text-5xl"
           >
             Dúvidas sobre estética automotiva
           </motion.h2>
@@ -97,7 +96,7 @@ const FAQ = () => {
           <motion.p
             variants={SlideUp(0.4)}
             initial="initial"
-            whileInView={"animate"}
+            whileInView="animate"
             className="mx-auto max-w-2xl text-lg text-(--muted-foreground)"
           >
             Tire suas principais dúvidas sobre proteção, acabamento e cuidados
@@ -106,7 +105,7 @@ const FAQ = () => {
         </div>
 
         <div className="mx-auto">
-          <Accordion type="single" collapsible>
+          <Accordion type="single" collapsible className="w-full">
             <motion.div
               variants={container}
               initial="hidden"
@@ -117,23 +116,30 @@ const FAQ = () => {
                 <motion.div key={index} variants={item}>
                   <AccordionItem
                     value={`item-${index}`}
-                    className="rounded-2xl border border-white/10 bg-(--card) px-5"
+                    className="overflow-hidden rounded-2xl border border-white/10 bg-(--card) px-5 transition-colors duration-300 data-[state=open]:border-(--primary)"
                   >
-                    <AccordionTrigger className="group cursor-pointer text-white text-left hover:no-underline [&>svg]:hidden">
+                    <AccordionTrigger className="group cursor-pointer py-5 text-left text-white hover:no-underline [&>svg]:hidden">
                       <div className="flex w-full items-center justify-between gap-6">
-                        <span className="pr-2 text-base text-white hover:text-(--primary)">
+                        <span className="pr-2 text-base leading-6 text-white transition-colors duration-300 group-hover:text-(--primary)">
                           {faq.question}
                         </span>
 
-                        <span className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/15 hover:bg-white/25">
+                        <span className="relative flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/15 transition-all duration-300 group-hover:bg-white/25">
                           <span className="absolute h-0.5 w-4 rounded-full bg-white transition-all duration-300" />
-                          <span className="absolute h-4 w-0.5 rounded-full bg-white transition-all duration-300 group-data-[state=open]:rotate-45 group-data-[state=open]:scale-y-0" />
+                          <span className="absolute h-4 w-0.5 rounded-full bg-white transition-all duration-300 group-data-[state=open]:scale-y-0" />
                         </span>
                       </div>
                     </AccordionTrigger>
 
-                    <AccordionContent className="text-(--muted-foreground) leading-6">
-                      {faq.answer}
+                    <AccordionContent className="overflow-hidden pb-5">
+                      <motion.div
+                        initial={{ opacity: 0, y: -8 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.35, ease: "easeOut" }}
+                        className="text-(--muted-foreground) leading-6"
+                      >
+                        {faq.answer}
+                      </motion.div>
                     </AccordionContent>
                   </AccordionItem>
                 </motion.div>
