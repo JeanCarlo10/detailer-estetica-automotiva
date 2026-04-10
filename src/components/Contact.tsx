@@ -164,7 +164,7 @@ const Contact = () => {
                         <Input
                           {...field}
                           placeholder="Seu nome completo"
-                          className="text-white placeholder:text-white/40 placeholder:italic bg-black border border-(--border-dark) focus:border-2 focus:border-(--primary) focus:outline-none h-10 px-3 py-2 shadow-none rounded-md w-full"
+                          className="h-10 w-full rounded-md border border-(--border-dark) bg-black px-3 py-2 text-white shadow-none placeholder:italic placeholder:text-white/40 focus:border-(--primary) focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
                         />
                       </FormControl>
                       <FormMessage className="text-(--ring)" />
@@ -185,7 +185,7 @@ const Contact = () => {
                           {...field}
                           type="email"
                           placeholder="seu@email.com"
-                          className="text-white placeholder:text-white/40 placeholder:italic bg-black border border-(--border-dark) focus:border-2 focus:border-(--primary) focus:outline-none h-10 px-3 py-2 shadow-none rounded-md w-full"
+                          className="h-10 w-full rounded-md border border-(--border-dark) bg-black px-3 py-2 text-white shadow-none placeholder:italic placeholder:text-white/40 focus:border-(--primary) focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
                         />
                       </FormControl>
                       <FormMessage className="text-(--ring)" />
@@ -206,7 +206,7 @@ const Contact = () => {
                           {...field}
                           mask="(00) 00000-0000"
                           placeholder="(99) 99999-9999"
-                          className="text-white placeholder:text-white/40 placeholder:italic bg-black border border-(--border-dark) focus:border-2 focus:border-(--primary) focus:outline-none h-10 px-3 py-2 shadow-none rounded-md w-full"
+                          className="h-10 w-full rounded-md border border-(--border-dark) bg-black px-3 py-2 text-white shadow-none placeholder:italic placeholder:text-white/40 focus:border-(--primary) focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
                         />
                       </FormControl>
                       <FormMessage className="text-(--ring)" />
@@ -233,38 +233,39 @@ const Contact = () => {
                               onValueChange={controllerField.onChange}
                             >
                               <FormControl>
-                                <SelectTrigger className="text-white bg-black border border-(--border-dark) focus:border-2 focus:border-(--primary) focus:outline-none h-10 px-3 py-2 shadow-none rounded-md w-full data-[placeholder]:italic data-[placeholder]:text-white/40">
+                                <SelectTrigger className="h-10 w-full rounded-md border border-(--border-dark) bg-black px-3 py-2 text-white shadow-none data-[placeholder]:italic data-[placeholder]:text-white/40 focus:border-(--primary) focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0">
                                   <SelectValue placeholder="Selecione o serviço" />
                                 </SelectTrigger>
                               </FormControl>
-                              <SelectContent className="bg-(--secondary) border-(--card)">
+
+                              <SelectContent className="border-(--card) bg-(--secondary)">
                                 <SelectItem
                                   value="higienizacao"
-                                  className="hover:bg-(background) text-(--primary) focus:bg-(--background)"
+                                  className="text-(--primary) hover:bg-(background) focus:bg-(--background)"
                                 >
                                   Higienização interna
                                 </SelectItem>
                                 <SelectItem
                                   value="polimento"
-                                  className="hover:bg-(background) text-(--primary) focus:bg-(--background)"
+                                  className="text-(--primary) hover:bg-(background) focus:bg-(--background)"
                                 >
                                   Polimento técnico
                                 </SelectItem>
                                 <SelectItem
                                   value="ppf"
-                                  className="hover:bg-(background) text-(--primary) focus:bg-(--background)"
+                                  className="text-(--primary) hover:bg-(background) focus:bg-(--background)"
                                 >
                                   PPF
                                 </SelectItem>
                                 <SelectItem
                                   value="vitrificacao"
-                                  className="hover:bg-(background) text-(--primary) focus:bg-(--background)"
+                                  className="text-(--primary) hover:bg-(background) focus:bg-(--background)"
                                 >
                                   Vitrificação de pintura
                                 </SelectItem>
                                 <SelectItem
                                   value="outro"
-                                  className="hover:bg-(background) text-(--primary) focus:bg-(--background)"
+                                  className="text-(--primary) hover:bg-(background) focus:bg-(--background)"
                                 >
                                   Outro
                                 </SelectItem>
@@ -290,7 +291,7 @@ const Contact = () => {
                         <Textarea
                           {...field}
                           placeholder="Descreva o serviço desejado..."
-                          className="min-h-[120px] text-white placeholder:text-white/40 placeholder:italic bg-black border border-(--border-dark) focus:border-2 focus:border-(--primary) focus:outline-none h-10 px-3 py-2 shadow-none rounded-md w-full"
+                          className="min-h-[120px] w-full rounded-md border border-(--border-dark) bg-black px-3 py-2 text-white shadow-none placeholder:italic placeholder:text-white/40 focus:border-(--primary) focus:outline-none focus:ring-0 focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-offset-0"
                         />
                       </FormControl>
                       <FormMessage className="text-(--ring)" />
@@ -300,12 +301,12 @@ const Contact = () => {
 
                 <Button
                   type="submit"
-                  className="w-full group relative overflow-hidden px-6 py-6 bg-(--primary) border border-(--border-dark) text-black text-lg font-bold rounded-lg cursor-pointer"
+                  className="group relative w-full cursor-pointer overflow-hidden rounded-lg border border-(--border-dark) bg-(--primary) px-6 py-6 text-lg font-bold text-black"
                 >
                   <span className="block transition-all duration-300 group-hover:-translate-y-full group-hover:opacity-0">
                     Enviar solicitação
                   </span>
-                  <span className="absolute inset-0 flex items-center justify-center translate-y-full opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                  <span className="absolute inset-0 flex translate-y-full items-center justify-center opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                     Enviar solicitação
                   </span>
                 </Button>
